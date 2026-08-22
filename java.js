@@ -8,9 +8,7 @@ const paymentMethodStorageKey = "nariya-payment-method";
 const deliveryAddressStorageKey = "nariya-delivery-address";
 const qrBankStorageKey = "nariya-qr-bank";
 const qrBankFiles = {
-    aba: { name: "ABA Bank", file: "Qr.jpg" },
-    acleda: { name: "ACLEDA Bank", file: "Qr2.jpg" },
-    wing: { name: "Wing Bank", file: "Qr3.jpg" }
+    aba: { name: "ABA Bank", file: "Qr.jpg" }
 };
 
 const cartCount =
@@ -399,9 +397,10 @@ paymentMethod.addEventListener("change", () => {
 });
 
 qrBank.addEventListener("change", () => {
-    const bank = qrBankFiles[qrBank.value];
+    const bank = qrBankFiles[qrBank.value] || qrBankFiles.aba;
 
-    localStorage.setItem(qrBankStorageKey, qrBank.value);
+    qrBank.value = "aba";
+    localStorage.setItem(qrBankStorageKey, "aba");
     paymentQr.src = bank.file;
     paymentQr.alt = `${bank.name} QR payment code`;
 });
