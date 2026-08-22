@@ -8,7 +8,7 @@ const paymentMethodStorageKey = "nariya-payment-method";
 const deliveryAddressStorageKey = "nariya-delivery-address";
 const qrBankStorageKey = "nariya-qr-bank";
 const qrBankFiles = {
-    aba: { name: "ABA Bank", file: "Qr.jpg" }
+    aba: { name: "ABA Bank", file: "images/Qr.jpg" }
 };
 
 const cartCount =

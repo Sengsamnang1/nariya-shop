@@ -1243,4 +1243,10 @@ footer {
         margin-top: 56px;
         padding: 34px 26px;
     }
+    .products {
+        grid-template-columns: 1fr;
+        grid-auto-columns: auto;
+        grid-auto-flow: row;
+        overflow-x: visible;
+    }
 }
