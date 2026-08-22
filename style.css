@@ -629,11 +629,15 @@ a {
 }
 
 .extra-product {
-    display: none;
+    display: block;
 }
 
 .products.show-all .extra-product {
     display: block;
+}
+
+#showAll {
+    display: none;
 }
 
 .products.dress-only .product-card:not([data-category="dress"]) {
