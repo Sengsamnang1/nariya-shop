@@ -1439,9 +1439,9 @@ body {
 }
 
 .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
-    max-width: 680px;
+    max-width: none;
     margin: 0 auto;
 }
 
@@ -1527,5 +1527,11 @@ footer {
     }
     .product-info h3 {
         font-size: 23px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
