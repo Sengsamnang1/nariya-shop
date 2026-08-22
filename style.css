@@ -1254,3 +1254,9 @@ footer {
         overflow-x: visible;
     }
 }
+
+.products {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    overflow-x: visible;
+}
