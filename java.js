@@ -473,6 +473,9 @@ const showAllButton =
 const products =
     document.querySelector(".products");
 
+products.classList.add("show-all");
+showAllButton.hidden = true;
+
 const categoryLinks =
     document.querySelectorAll(".category-card[data-filter]");
 
