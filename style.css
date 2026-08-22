@@ -1260,3 +1260,20 @@ footer {
     grid-auto-flow: row;
     overflow-x: visible;
 }
+
+.product-card {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.product-picture {
+    height: 320px;
+    aspect-ratio: auto;
+}
+
+@media (max-width: 600px) {
+    .product-picture {
+        height: 250px;
+    }
+}
