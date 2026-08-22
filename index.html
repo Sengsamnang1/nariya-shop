@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nariya Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Nariya shop<span> SWIM</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#collections">Collections</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="account-btn" id="accountButton" type="button">Account / Login</button>
+
+        <button class="cart-btn" id="cartButton" type="button">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <img src="1.png" alt="Swimming collection" class="hero-image">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                SUMMER SWIM COLLECTION
+            </p>
+
+            <h1>
+                Make a splash.
+                <br>
+                <span>Love the water.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover colorful swimming clothes and accessories made for sunny days by the pool.
+            </p>
+
+            <a href="#shop" class="shop-button">
+                Shop Collection →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories" id="collections">
+
+        <p class="section-label">
+            EXPLORE
+        </p>
+
+        <h2>
+            Find your swim style
+        </h2>
+
+        <div class="category-grid">
+
+            <div class="category-card pink">
+                <div class="category-icon">👙</div>
+                <h3>Swimwear</h3>
+                <p>Fresh styles for the pool</p>
+            </div>
+
+            <div class="category-card blue">
+                <div class="category-icon">🥽</div>
+                <h3>Goggles</h3>
+                <p>See clearly underwater</p>
+            </div>
+
+            <div class="category-card yellow">
+                <div class="category-icon">🏄</div>
+                <h3>Accessories</h3>
+                <p>Everything for your swim</p>
+            </div>
+
+            <div class="category-card green">
+                <div class="category-icon">🎒</div>
+                <h3>Swim Bags</h3>
+                <p>Carry your gear in style</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section class="products-section" id="shop">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">
+                    SHOP OUR FAVORITES
+                </p>
+
+                <h2>
+                    Popular right now
+                </h2>
+            </div>
+
+            <button id="showAll">
+                View All →
+            </button>
+
+        </div>
+
+
+        <div class="products">
+
+            <article class="product-card">
+
+                <div class="product-picture pink-bg">
+
+                    <span class="sale">
+                        NEW
+                    </span>
+
+                    <img src="cap.jpg" alt="Colorful swimming caps">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>SWIMWEAR</p>
+
+                    <h3>
+                        Coral Summer Swim Dress
+                    </h3>
+
+                    <p class="product-description">
+                        Colorful, comfortable swim caps for pool days and beach adventures.
+                    </p>
+
+                    <strong>
+                        $5.00
+                    </strong>
+
+                    <button class="add-button" data-product="Coral Summer Swim Dress">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-picture blue-bg">
+
+                    <span class="sale">
+                        NEW
+                    </span>
+
+                    <img src="cap2.jpg" alt="Blue dolphin swimming cap">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>SWIMWEAR</p>
+
+                    <h3>
+                        Blue Dolphin Swim Cap
+                    </h3>
+
+                    <p class="product-description">
+                        Soft, comfortable swim cap with a playful dolphin design for swimming and pool days.
+                    </p>
+
+                    <strong>
+                        $3.50
+                    </strong>
+
+                    <button class="add-button" data-product="Blue Dolphin Swim Cap">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-picture blue-bg">
+
+                    <span class="sale">
+                        NEW
+                    </span>
+
+                    <img src="cap1.jpg" alt="Blue astronaut swimming cap">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>SWIMWEAR</p>
+
+                    <h3>
+                        Blue Astronaut Swim Cap
+                    </h3>
+
+                    <p class="product-description">
+                        Comfortable blue swim cap with a playful astronaut design for bright pool days.
+                    </p>
+
+                    <strong>
+                        $3.50
+                    </strong>
+
+                    <button class="add-button" data-product="Blue Astronaut Swim Cap">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-picture blue-bg">
+
+                    <span class="product-emoji">
+                        🥽
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>GOGGLES</p>
+
+                    <h3>
+                        Ocean Blue Goggles
+                    </h3>
+
+                    <strong>
+                        $8.00
+                    </strong>
+
+                    <button class="add-button" data-product="Ocean Blue Goggles">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-picture yellow-bg">
+
+                    <span class="sale">
+                        SALE
+                    </span>
+
+                    <span class="product-emoji">
+                        🩴
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>ACCESSORIES</p>
+
+                    <h3>
+                        Summer Pool Slides
+                    </h3>
+
+                    <strong>
+                        $22.00
+                    </strong>
+
+                    <button class="add-button" data-product="Summer Pool Slides">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-picture green-bg">
+
+                    <span class="product-emoji">
+                        🎒
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>SWIM BAG</p>
+
+                    <h3>
+                        Aqua Sport Bag
+                    </h3>
+
+                    <strong>
+                        $40.00
+                    </strong>
+
+                    <button class="add-button" data-product="Aqua Sport Bag">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card extra-product">
+
+                <div class="product-picture blue-bg">
+
+                    <span class="product-emoji">
+                        🧢
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>SWIM ACCESSORIES</p>
+
+                    <h3>
+                        Blue Swim Cap
+                    </h3>
+
+                    <strong>
+                        $12.00
+                    </strong>
+
+                    <button class="add-button" data-product="Blue Swim Cap">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card extra-product">
+
+                <div class="product-picture pink-bg">
+
+                    <img src="pink-cap.jpg" alt="Pink Swim Cap">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>SWIM ACCESSORIES</p>
+
+                    <h3>
+                        Pink Swim Cap
+                    </h3>
+
+                    <strong>
+                        $15.00
+                    </strong>
+
+                    <button class="add-button" data-product="Pink Swim Cap">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card extra-product">
+
+                <div class="product-picture green-bg">
+
+                    <img src="beach-towel.jpg" alt="Beach Towel">
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>ACCESSORIES</p>
+
+                    <h3>
+                        Beach Towel
+                    </h3>
+
+                    <strong>
+                        $25.00
+                    </strong>
+
+                    <button class="add-button" data-product="Beach Towel">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- BANNER -->
+
+    <section class="summer-banner">
+
+        <div>
+
+            <p>
+                READY FOR SUMMER?
+            </p>
+
+            <h2>
+                Your next swim starts here.
+            </h2>
+
+        </div>
+
+        <a href="#shop">
+            Shop Now →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <div class="footer-logo">
+            AQUA<span>SWIM</span>
+
+            <p>
+                Swimwear and accessories for sunny adventures.
+            </p>
+        </div>
+
+        <div>
+            <h4>SHOP</h4>
+            <a href="#shop">Swimwear</a>
+            <a href="#shop">Goggles</a>
+            <a href="#shop">Accessories</a>
+        </div>
+
+        <div>
+            <h4>HELP</h4>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div>
+            <h4>FOLLOW US</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+        </div>
+
+    </footer>
+
+    <div class="auth-modal" id="authModal" aria-hidden="true">
+
+        <div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+
+            <button class="auth-close" id="authClose" type="button" aria-label="Close account window">&times;</button>
+
+            <p class="section-label">MY ACCOUNT</p>
+            <h2 id="authTitle">Login to your account</h2>
+            <p class="auth-message" id="authMessage" role="status"></p>
+
+            <form class="auth-form" id="loginForm">
+                <label class="payment-method-label" for="loginIdentifier">Email or phone number</label>
+                <input class="auth-input" id="loginIdentifier" type="text" autocomplete="username" placeholder="Enter your email or phone number" required>
+
+                <label class="payment-method-label" for="loginPassword">Password</label>
+                <div class="password-field">
+                    <input class="auth-input" id="loginPassword" type="password" autocomplete="current-password" required>
+                    <button class="password-eye" type="button" data-password-target="loginPassword" aria-label="Show password">&#128065;</button>
+                </div>
+
+                <button class="auth-submit" type="submit">Login</button>
+                <p class="auth-switch">New customer?</p>
+                <button class="auth-register-link" type="button" id="showRegister">Register</button>
+            </form>
+
+            <form class="auth-form" id="registerForm" hidden>
+                <label class="payment-method-label" for="registerName">Full name</label>
+                <input class="auth-input" id="registerName" type="text" autocomplete="name" required>
+
+                <span class="payment-method-label">Register with</span>
+                <div class="contact-options" role="group" aria-label="Registration contact method">
+                    <button class="contact-option is-selected" type="button" data-contact-method="phone" aria-pressed="true">Phone number</button>
+                    <button class="contact-option" type="button" data-contact-method="email" aria-pressed="false">Email</button>
+                </div>
+
+                <div id="registerEmailField" hidden>
+                    <label class="payment-method-label" for="registerEmail">Email</label>
+                    <input class="auth-input" id="registerEmail" type="email" autocomplete="email">
+                </div>
+
+                <div id="registerPhoneField">
+                    <label class="payment-method-label" for="registerPhone">Phone number</label>
+                    <input class="auth-input" id="registerPhone" type="tel" autocomplete="tel" placeholder="e.g. 012 345 678" required>
+                </div>
+
+                <label class="payment-method-label" for="registerPassword">Password</label>
+                <div class="password-field">
+                    <input class="auth-input" id="registerPassword" type="password" minlength="6" autocomplete="new-password" required>
+                    <button class="password-eye" type="button" data-password-target="registerPassword" aria-label="Show password">&#128065;</button>
+                </div>
+
+                <label class="payment-method-label" for="registerPasswordConfirm">Confirm password</label>
+                <div class="password-field">
+                    <input class="auth-input" id="registerPasswordConfirm" type="password" minlength="6" autocomplete="new-password" required>
+                    <button class="password-eye" type="button" data-password-target="registerPasswordConfirm" aria-label="Show password">&#128065;</button>
+                </div>
+
+                <button class="auth-submit" type="submit">Register</button>
+                <p class="auth-switch">Already registered? <button type="button" id="showLogin">Login</button></p>
+            </form>
+
+            <div class="auth-account" id="authAccount" hidden>
+                <p>You are logged in as <strong id="accountName"></strong>.</p>
+                <button class="auth-submit" id="logoutButton" type="button">Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="payment-modal" id="paymentModal" aria-hidden="true">
+
+        <div class="payment-panel" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+
+            <button class="payment-close" id="paymentClose" type="button" aria-label="Close payment window">&times;</button>
+
+            <p class="section-label">CHECKOUT</p>
+
+            <h2 id="paymentTitle">Pay for your order</h2>
+
+            <p class="payment-summary" id="paymentSummary"></p>
+
+            <label class="payment-method-label" for="paymentMethod">Payment method</label>
+            <select class="payment-method" id="paymentMethod">
+                <option value="qr">QR payment</option>
+                <option value="cash">Cash on delivery</option>
+                <option value="bank">Bank transfer</option>
+            </select>
+
+            <div class="qr-bank-choice" id="qrBankChoice" hidden>
+                <label class="payment-method-label" for="qrBank">Choose your bank</label>
+                <select class="payment-method" id="qrBank">
+                    <option value="aba">ABA Bank</option>
+                    <option value="acleda">ACLEDA Bank</option>
+                    <option value="wing">Wing Bank</option>
+                </select>
+            </div>
+
+            <img class="payment-qr" src="Qr.jpg" alt="ABA KHQR payment code for Chakriya Seng">
+
+            <p class="payment-instructions" id="paymentInstructions">Scan the QR code with your banking app to pay.</p>
+            <p class="payment-account" id="paymentAccount">ABA Account Name: Seng Chakriya<br> USD Account Number: 000 628 793 <br>KHR Account Number: 600 253 123</p>
+
+            <div class="delivery-location" id="deliveryLocation" hidden>
+                <label class="payment-method-label" for="deliveryAddress">Delivery location</label>
+                <textarea class="payment-method delivery-address" id="deliveryAddress" rows="3" placeholder="Enter your delivery address" autocomplete="street-address"></textarea>
+            </div>
+
+            <button class="payment-confirm" id="paymentConfirm" type="button">I have paid</button>
+
+            <div class="receipt" id="receipt" hidden>
+                <p class="section-label">ORDER RECEIPT</p>
+                <h3>Thank you for your order</h3>
+                <img class="receipt-qr" id="receiptQr" hidden alt="Selected bank QR payment code">
+                <p class="receipt-items-label">Items purchased</p>
+                <p class="receipt-items" id="receiptItems"></p>
+                <strong id="receiptTotal"></strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
